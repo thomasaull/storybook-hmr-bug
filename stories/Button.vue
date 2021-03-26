@@ -5,6 +5,8 @@
 <script>
 import './button.css';
 
+import { testFunction } from './test'
+
 export default {
   name: 'my-button',
 
@@ -43,6 +45,10 @@ export default {
         backgroundColor: this.backgroundColor,
       };
     },
+  },
+
+  mounted() {
+    testFunction()
   },
 
   methods: {
